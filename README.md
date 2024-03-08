@@ -45,6 +45,19 @@ Detail to be provided
 ## Config Template
 Check [config.json.template](config.json.template) & [config-1.8+.json.template](config-1.8+.json.template)  
 Detail to be provided
+### Customized Rule Set with Auto-Update
+It is done via my [sing-box-geosite](https://github.com/SmokedSalmon/sing-box-geosite), which is forked and modified from [Toperlock's sing-box-geosite](https://github.com/Toperlock/sing-box-geosite)  
+Auto-update is carried by **Github Action** (see its [.github/workflows/sync.yaml](https://github.com/SmokedSalmon/sing-box-geosite/blob/main/.github/workflows/sync.yml)) which sync from a remote rule source (maintained and updated),  
+then converted to sing-box rule set format and committed  
+Raw format is read via this [mirror](https://mirror.ghproxy.com/) for China user
+> **\[Attention!!]** It might require manual update once blocked by **GFW**
+### Common rule set remote url
+- Wechat
+https://mirror.ghproxy.com/https://raw.githubusercontent.com/SmokedSalmon/sing-box-geosite/main/rule/WeChat.json
+- Bilibili
+https://mirror.ghproxy.com/https://raw.githubusercontent.com/SmokedSalmon/sing-box-geosite/main/rule/Bilibili.json
+- Others
+*To be provided*
 
 <br />
 <br />

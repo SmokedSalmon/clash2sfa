@@ -109,6 +109,13 @@
                 "outbound": "select"
             },
             {
+                "rule_set": [
+                    "WeChat",
+                    "Bilibili"
+                ],
+                "outbound": "direct"
+            },
+            {
                 "ip_is_private": true,
                 "outbound": "direct"
             },
@@ -142,6 +149,20 @@
                 "type": "remote",
                 "format": "source",
                 "url": "https://gist.githubusercontent.com/xmdhs/71fc5ff6ef29f5ecaf2c52b8de5c3172/raw/chrome-doh.json"
+            },
+            {
+                "type": "remote",
+                "tag": "WeChat",
+                "format": "source",
+                "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/SmokedSalmon/sing-box-geosite/main/rule/WeChat.json",
+                "download_detour": "direct"
+            },
+            {
+                "type": "remote",
+                "tag": "Bilibili",
+                "format": "source",
+                "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/SmokedSalmon/sing-box-geosite/main/rule/Bilibili.json",
+                "download_detour": "direct"
             }
         ]
     },
